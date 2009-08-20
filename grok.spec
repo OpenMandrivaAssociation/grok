@@ -1,6 +1,6 @@
 %define upstream_name    App-Grok
 %define appli_name       grok
-%define upstream_version 0.17
+%define upstream_version 0.19
 
 Name:       %{appli_name}
 Version:    %perl_convert_version %{upstream_version}
