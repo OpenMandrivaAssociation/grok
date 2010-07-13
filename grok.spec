@@ -13,10 +13,12 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/App/%{appli_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(File::HomeDir)
 BuildRequires: perl(File::ShareDir)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(Getopt::Long)
 BuildRequires: perl(IO::Interactive)
+BuildRequires: perl(LWP::UserAgent)
 BuildRequires: perl(Perl6::Doc)
 BuildRequires: perl(Perl6::Perldoc)
 BuildRequires: perl(Perl6::Perldoc::To::Ansi)
@@ -30,6 +32,7 @@ BuildRequires: perl(Test::Perl::Critic)
 BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Test::Pod::Coverage)
 BuildRequires: perl(Test::Script)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
