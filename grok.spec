@@ -4,7 +4,7 @@
 
 Name:       %{appli_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Release:    3
 
 Summary:    A Pod 6 backend for grok
 License:    GPL+ or Artistic
