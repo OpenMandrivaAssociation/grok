@@ -3,13 +3,13 @@
 %define upstream_version 0.21
 
 Name:       %{appli_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    4
 
 Summary:    A Pod 6 backend for grok
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
+Url:        https://metacpan.org/dist/App-Grok
 Source0:    http://www.cpan.org/modules/by-module/App/%{appli_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	make
