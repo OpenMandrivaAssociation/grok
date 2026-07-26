@@ -1,16 +1,14 @@
 %define upstream_name    App-Grok
 %define appli_name       grok
-%define upstream_version 0.21
-
 Name:       %{appli_name}
-Version:    %{upstream_version}
-Release:    4
+Version:    0.21
+Release:    5
 
 Summary:    A Pod 6 backend for grok
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/App-Grok
-Source0:    http://www.cpan.org/modules/by-module/App/%{appli_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/App/%{appli_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::MakeMaker)
@@ -42,7 +40,7 @@ This class provides the main functionality needed by grok. It has some
 methods you can use if you need to hook into grok.
 
 %prep
-%setup -q -n %{appli_name}-%{upstream_version}
+%setup -q -n %{appli_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
